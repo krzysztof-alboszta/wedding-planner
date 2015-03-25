@@ -1,0 +1,3 @@
+wedding_planner_core:
+    resource: "@WeddingPlannerCoreBundle/Controller/"
+    type:     annotation
