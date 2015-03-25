@@ -46,7 +46,6 @@ class Guest
      */
     private $needTransport;
 
-
     /**
      * Get id
      *
@@ -149,25 +148,48 @@ class Guest
         return $this->invitationStatus;
     }
 
-    function getResponse()
+    public function getResponse()
     {
         return $this->response;
     }
 
-    function getNeedTransport()
+    public function getNeedTransport()
     {
         return $this->needTransport;
     }
 
-    function setResponse($response)
+    /**
+     *
+     * @param boolean $response
+     *
+     * @return self
+     */
+    public function setResponse($response)
     {
         $this->response = $response;
+
+        return $this;
     }
 
-    function setNeedTransport($needTransport)
+    /**
+     *
+     * @param boolean $needTransport
+     *
+     * @return self
+     */
+    public function setNeedTransport($needTransport)
     {
         $this->needTransport = $needTransport;
+
+        return $this;
     }
 
-
+    /**
+     *
+     * @return string
+     */
+    public function getFullName()
+    {
+        return $this->getFirstName().' '.$this->getLastName();
+    }
 }
