@@ -21,6 +21,7 @@ class AppKernel extends Kernel {
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
             new AppBundle\AppBundle(),
+            new WeddingPlanner\CoreBundle\WeddingPlannerCoreBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
