@@ -1,0 +1,4 @@
+wedding_planner_core:
+    resource: "@WeddingPlannerCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+

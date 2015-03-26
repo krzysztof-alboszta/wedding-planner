@@ -1,2 +1,4 @@
-# wedding-planner
-Simple application to handle collecting guests data and calculate costs of planned wedding
+weddingPlanner
+==============
+
+A Symfony project created on March 25, 2015, 11:27 am.

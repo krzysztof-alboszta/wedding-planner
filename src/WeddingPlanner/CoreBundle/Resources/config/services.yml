@@ -1,0 +1,17 @@
+services:
+    wedding_planner_core.repository.guest:
+        class: WeddingPlanner\CoreBundle\Doctrine\ORM\Repository
+        factory_service: doctrine.orm.default_entity_manager
+        factory_method: getRepository
+        
+    wedding_planner_core.manager.guest:
+        class: WeddingPlanner\CoreBundle\Manager\GuestManager
+        arguments: 
+            - @doctrine.orm.entity_manager
+            - @wedding_planner.guest_repository
+
+# aliases
+    wedding_planner.guest_repository:
+        alias: wedding_planner_core.repository.guest
+    wedding_planner.guest_manager:
+        alias: wedding_planner_core.manager.guest
