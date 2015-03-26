@@ -51,4 +51,14 @@ class GuestManager
     {
         
     }
+
+    public function accept(GuestInterface $guest)
+    {
+
+    }
+
+    public function reject(GuestInterface $guest)
+    {
+
+    }
 }
